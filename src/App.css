@@ -1,1 +1,19 @@
-
+/* Apply Urbanist for headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700; /* Use bold */
+  }
+  
+  /* Apply Syne for body text */
+  body {
+    font-family: 'Syne', sans-serif;
+    font-weight: 400; /* Use regular */
+  }
+  
+  /* Specific styling for italic Urbanist */
+  .header-italic {
+    font-family: 'Urbanist', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
