@@ -18,11 +18,11 @@ export const NavBar = () => {
             <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto d-flex justify-content-evenly flex-grow-1" >
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#features">About Me</Nav.Link>
-            <Nav.Link href="#pricing">Professional Experience</Nav.Link>
-            <Nav.Link href="#pricing">Digital Work</Nav.Link>
-            <Nav.Link href="#pricing">Music</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+            <Nav.Link href="/about">About Me</Nav.Link>
+            <Nav.Link href="/experience">Professional Experience</Nav.Link>
+            <Nav.Link href="/work">Digital Work</Nav.Link>
+            <Nav.Link href="/music">Music</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           </Navbar.Collapse>
         </Container>
