@@ -1,9 +1,31 @@
 import { Container, Nav, Navbar } from "react-bootstrap"
-
+import { useEffect, useState } from "react";
+import './navbar.css'
 
 export const NavBar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Function to handle scroll event
+  const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0); // Set to true if scrolled down
+  };
+
+  useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+
+      // Cleanup the event listener on component unmount
+      return () => {
+          window.removeEventListener("scroll", handleScroll);
+      };
+  }, []);
+
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" sticky="top" bg="dark" data-bs-theme="dark">
+        <Navbar 
+          expand="lg" 
+          className={`navbar ${isScrolled ? "bg-dark" : "bg-transparent"} transition`} 
+          sticky="top" 
+          data-bs-theme={isScrolled ? "dark" : "light"}>
         <Container>
           <Navbar.Brand href="/">
           <img

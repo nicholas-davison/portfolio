@@ -29,11 +29,11 @@ h6 {
 }
 
 /* Italic Urbanist for specific headers */
-h1.italic {
+h5.italic {
     font-family: 'Urbanist', sans-serif;
     font-style: italic;
     font-weight: 400; /* Regular weight */
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 /* Apply Syne font for body text */
@@ -58,4 +58,18 @@ p.bold {
 /* Adjust font size for larger text */
 .large-text {
     font-size: 1.5rem; /* Larger text */
+}
+
+
+.custom-btn {
+    
+    background-color: #013b71; /* Dark blue background */
+    color: white; /* White text color */
+    border: none; /* Optional: Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.custom-btn:hover {
+    background-color: #001127; /* Optional: Darker shade for hover effect */
+    color: white; /* Keep text white on hover */
 }
