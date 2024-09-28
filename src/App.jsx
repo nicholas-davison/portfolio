@@ -1,8 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom"
 import { HomePage } from './pages/home'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { NavBar } from './components/navbar'
 import { About } from './pages/about'
 import { Experience } from './pages/experience'

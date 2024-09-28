@@ -1,19 +1,61 @@
-/* Apply Urbanist for headers */
+/* Apply the Urbanist font to headers */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Urbanist', sans-serif;
-    font-weight: 700; /* Use bold */
-  }
-  
-  /* Apply Syne for body text */
-  body {
-    font-family: 'Syne', sans-serif;
-    font-weight: 400; /* Use regular */
-  }
-  
-  /* Specific styling for italic Urbanist */
-  .header-italic {
+    font-weight: 700; /* Bold */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Italic Urbanist for specific headers */
+h1.italic {
     font-family: 'Urbanist', sans-serif;
     font-style: italic;
-    font-weight: 400;
-  }
-  
+    font-weight: 400; /* Regular weight */
+    font-size: 2rem;
+}
+
+/* Apply Syne font for body text */
+body {
+    font-family: 'Syne', sans-serif; /* Ensure Syne is applied here */
+    font-weight: 400; /* Regular weight */
+    font-size: 1rem; /* Base font size */
+}
+
+/* Apply Bold for specific body elements */
+p.bold {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 1rem;
+}
+
+/* Adjust font size for small text */
+.small-text {
+    font-size: 0.875rem; /* Smaller text */
+}
+
+/* Adjust font size for larger text */
+.large-text {
+    font-size: 1.5rem; /* Larger text */
+}
