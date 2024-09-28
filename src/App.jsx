@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
-import { useState } from 'react'
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom"
 import { HomePage } from './pages/home'
 import { NavBar } from './components/navbar'

@@ -24,7 +24,8 @@ export const HomePage = () => {
                             I am an audio engineer, musician, and former operations manager 
                             making a transition into the technology industry.</p>
                         <Button className='custom-btn'>
-                            Learn More About Me 
+                            Learn More About Me
+                            <i className="bi bi-arrow-right-circle-fill m-2"></i>
                         </Button>
                     </Col>
                     <Col xs={12} md={6} className="section section2">
