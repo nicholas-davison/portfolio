@@ -1,9 +1,11 @@
+import { Container } from "react-bootstrap"
+import './css/work.css'
 
 export const Work = () => {
 
     return (
-        <div>
-            <h1>Work</h1>
-        </div>
+        <Container className="work-container">
+            
+        </Container>
     )
 }

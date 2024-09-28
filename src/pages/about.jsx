@@ -1,9 +1,11 @@
+import { Container } from "react-bootstrap"
+import './css/about.css'
 
 export const About = () => {
 
     return (
-        <div>
-            <h1>About</h1>
-        </div>
+        <Container className="about-container">
+            
+        </Container>
     )
 }
