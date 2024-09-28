@@ -9,6 +9,7 @@ import { Experience } from './pages/experience'
 import { Work } from './pages/work'
 import { Music } from './pages/music'
 import { Contact } from './pages/contact'
+import { Footer } from './components/footer';
  
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <>
             <NavBar />
             <Outlet />
+            <Footer />
           </>
         }> 
           <Route index element={<HomePage/>} />
