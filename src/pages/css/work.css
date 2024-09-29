@@ -1,3 +1,44 @@
 .work-container {
-    height: 100vh;
+    padding: 0;
+    margin: 0;  /* Remove any default margin */
+    width: 100vw
+}
+
+
+.row {
+    margin: 0; /* Remove margin from the row */
+}
+
+.top-image {
+    width: 100vw; /* Full width of the viewport */
+    height: 30vh; /* Height of 30% of the viewport height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block; /* Prevents any inline element spacing issues */
+    padding: 0
+}
+
+.work-section-container {
+    border: solid rgb(243, 219, 175);
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.work-section-text {
+    padding: 10%;
+    font-size: large;
+}
+
+.work-section-imagery {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: 100%; /* Ensure the column takes up the full height */
+    padding:75px;
+}
+
+.work-section-imagery img {
+    width: 100%; /* Make the image fill the column width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Prevent overflow */
+    object-fit: contain; /* Ensure the image fits well within the column */
 }

@@ -10,11 +10,18 @@ import { Work } from './pages/work'
 import { Music } from './pages/music'
 import { Contact } from './pages/contact'
 import { Footer } from './components/footer';
+import ScrollToTop from './components/scrollToTop';
+import { useEffect } from 'react';
  
 function App() {
 
+/*   useEffect(() => {
+    window.history.scrollRestoration = "manual";
+  }, []); */
+
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={
           <>

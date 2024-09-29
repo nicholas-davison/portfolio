@@ -1,7 +1,7 @@
 .footer {
     position: relative;
     bottom: 0;
-    height: 400px;
+    height: 300px;
     width: 100%;
     background-color: #003262;
     color: white;
@@ -10,11 +10,37 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
   }
   
-  .footer p {
-    margin: 0;
+  .footer-container {
+    flex-grow: 1; /* Allow the container to grow and fill the footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Helps in spacing the elements */
+    height: 100%; /* Ensures the container takes full height of the footer */
+}
+
+.footer-title {
+    margin: 1rem 0; /* Adds spacing around the title */
+}
+
+.footer-row {
+    flex-grow: 1; /* Makes the row occupy the available space in the footer */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center the row content */
+}
+
+.footer-copy {
+    margin: 0; /* No margin for the copyright text */
     text-align: center;
-  }
-  
+}
+
+.custom-icon-footer {
+  color: white;
+  font-size: 4rem;
+  transition: color 0.3s ease; 
+}
+
+.custom-icon-footer:hover {
+    color: rgb(255, 174, 158); 
+}
