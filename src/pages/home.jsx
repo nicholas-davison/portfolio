@@ -22,10 +22,12 @@ export const HomePage = () => {
                     <Col xs={12} md={6} className="section section1">
                         <h3>Hi There!</h3>
                         <p>My name is Nick Davison, and I am so glad you found your way here. 
-                            I am an audio engineer, musician, and former operations manager 
-                            making a transition into the technology industry.</p>
-                        <Link to="/about" className='custom-dark-btn'>
-                            Learn More About Me
+                            With a decade of combined experience in audio engineering and inventory management, 
+                            I have developed strong problem solving and managerial skills. Now, driven by a passion 
+                            for technology and operational efficiency, I am transitioning into the tech industry to 
+                            apply my expertise in creating data-driven solutions and optimizing processes.</p>
+                        <Link to="/experience" className='custom-dark-btn'>
+                            Learn More About My Professional Experience
                             <i className="bi bi-arrow-right-circle-fill m-2"></i>
                         </Link>
                     </Col>
@@ -91,7 +93,7 @@ export const HomePage = () => {
                     </Col>
 
     {/*  Music  */}
-                    <Col xs={12} md={6} className="section section8">
+{/*                     <Col xs={12} md={6} className="section section8">
                         <h2>Music</h2>
                         <p>I've been playing music since forever etc etc
                         </p>
@@ -101,7 +103,7 @@ export const HomePage = () => {
                         </Link>
                     </Col>
                     <Col xs={12} md={6} className="section section7">
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </div>
