@@ -1,6 +1,16 @@
-.contact-container {
+.contact-page {
     height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0; /* Override Bootstrap padding */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(20, 15, 15);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+
 }

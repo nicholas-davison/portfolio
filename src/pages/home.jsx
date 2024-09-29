@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './css/home.css'
 import { Button, Card, Col, Container, Row } from "react-bootstrap"
+import djangoLogo from '../assets/icons/djangoLogo.svg'
 
 export const HomePage = () => {
     return (
@@ -17,7 +18,7 @@ export const HomePage = () => {
                     padding: '0',
                 }}
                 >
-    {/*  Music  */}
+    {/*  About  */}
                 <Row className="border border-dark ">
                     <Col xs={12} md={6} className="section section1">
                         <h3>Hi There!</h3>
@@ -35,43 +36,62 @@ export const HomePage = () => {
                     </Col>
     {/*  Experience  */}                    
                     <Col xs={12} md={6} className="section section3">
-                        <h2>Professional Experience</h2>
-                        <p>With a decade of combined experience in audio engineering and inventory management, 
-                            I have developed strong problem solving and managerial skills. Now, driven by a passion 
-                            for technology and operational efficiency, I am transitioning into the tech industry to 
-                            apply my expertise in creating data-driven solutions and optimizing processes.
+                        <h2>Work Examples</h2>
+                        <p><strong>FallsFinder</strong> is a platform to discover, share, and save information about waterfalls 
+                            in the beautiful state of Tennessee. Users can create pages with detailed information 
+                            on waterfalls in their area, save their favorite falls from the site, and get map directions 
+                            to any of their favorite falls.
                         </p>
-                        <Link to="experience" className="custom-lite-btn">
-                            See my Credentials
+                        <Link to="work" className="custom-lite-btn">
+                            See my digital work
                             <i className="bi bi-arrow-right-circle-fill m-2"></i>
                         </Link>
                     </Col>
                     <Col className="section section4">
                         <Container>
-                            <Row className='text-center '>
-                                <Col className='icon-grid'>
-                                    <a href="https://github.com/nicholas-davison" target="_blank" rel="noopener noreferrer">
-                                        <i className="bi bi-github m-4 custom-icon"></i>
-                                    </a>
+                            <Row className='text-center'>
+                                <Col xs={6} md={4} className='icon-grid'>
+                                    <i className="fa-brands fa-js custom-icon"></i>
+                                    <span>JavaScript</span>
                                 </Col>
-                                <Col className='icon-grid'>
-                                    <a href="https://www.linkedin.com/in/nickdavison13/" target="_blank" rel="noopener noreferrer">    
-                                    <i className="bi bi-linkedin m-4 custom-icon"></i>
-                                    </a>
+                                <Col xs={6} md={4} className='icon-grid'>
+                                    <i className="fa-brands fa-react custom-icon"></i>
+                                    <span>React</span>
+                                </Col>
+                                <Col xs={6} md={4} className='icon-grid'>
+                                    <i className="fa-brands fa-css3-alt custom-icon"></i>
+                                    <span>CSS3</span>
                                 </Col>
                             </Row>
-                            <Row>
-                                <Col className='icon-grid'>
-                                    <i className="bi bi-cup-hot-fill m-4 custom-icon"></i>
+                            <Row className='text-center'>
+                                <Col xs={6} md={4} className='icon-grid'>
+                                    <i className="fa-brands fa-python custom-icon"></i>
+                                    <span>Python</span>
                                 </Col>
-                                <Col className='icon-grid'>
-                                    <i className="bi bi-boombox-fill m-4 custom-icon"></i>
+                                <Col xs={6} md={4} className='icon-grid'>
+                                    <img 
+                                        src={djangoLogo} 
+                                        className='custom-icon'
+                                        alt="Django Icon" 
+                                        /* style={{ width: '100%', maxWidth: '110px', height: 'auto' }} */
+                                    />
+                                    <span>Django</span>
+                                </Col>
+                                <Col xs={6} md={4} className='icon-grid'>
+                                    <i className="fa-brands fa-bootstrap custom-icon"></i>
+                                    <span>Bootstrap</span>
+                                </Col>
+                            </Row>
+                            <Row className='text-center'>
+                                <Col xs={12} md={12} className='icon-grid'>
+                                    <i className="fa-brands fa-github custom-icon"></i>
+                                    <span>GitHub</span>
                                 </Col>
                             </Row>
                         </Container>
                     </Col>
     {/*  Digital Work  */}                
-                    <Col xs={12} md={6} className="section section5">
+{/*                     <Col xs={12} md={6} className="section section5">
                         <Card style={{ width: '560px', height: '315px' }}>
                             <Card.Body 
                                 className="d-flex justify-content-center align-items-center"
@@ -90,7 +110,7 @@ export const HomePage = () => {
                             See my digital work
                             <i className="bi bi-arrow-right-circle-fill m-2"></i>
                         </Link>
-                    </Col>
+                    </Col> */}
 
     {/*  Music  */}
 {/*                     <Col xs={12} md={6} className="section section8">
