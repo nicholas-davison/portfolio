@@ -1,1 +1,95 @@
+/* Apply the Urbanist font to headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700; /* Bold */
+}
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Italic Urbanist for specific headers */
+h5.italic {
+    font-family: 'Urbanist', sans-serif;
+    font-style: italic;
+    font-weight: 400; /* Regular weight */
+    font-size: 1.25rem;
+}
+
+/* Apply Syne font for body text */
+body {
+    font-family: 'Syne', sans-serif; /* Ensure Syne is applied here */
+    font-weight: 400; /* Regular weight */
+    font-size: 1rem; /* Base font size */
+}
+
+/* Apply Bold for specific body elements */
+p.bold {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 1rem;
+}
+
+/* Adjust font size for small text */
+.small-text {
+    font-size: 0.875rem; /* Smaller text */
+}
+
+/* Adjust font size for larger text */
+.large-text {
+    font-size: 1.5rem; /* Larger text */
+}
+
+
+.custom-dark-btn {
+    
+    background-color: #013b71; /* Dark blue background */
+    color: white; /* White text color */
+    border: none; /* Optional: Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none; /* Remove the underline */
+
+}
+
+.custom-dark-btn:hover {
+    background-color: #001127; /* Optional: Darker shade for hover effect */
+    color: white; /* Keep text white on hover */
+}
+
+.custom-lite-btn {
+    
+    background-color: #ecf6ff; /* Dark blue background */
+    color: black; /* White text color */
+    border: none; /* Optional: Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none; /* Remove the underline */
+}
+
+.custom-lite-btn:hover {
+    background-color: #e9e9e9; /* Optional: Darker shade for hover effect */
+    color: black; /* Keep text white on hover */
+}

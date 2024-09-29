@@ -1,0 +1,22 @@
+
+.navbar {
+    position: fixed; /* Make navbar fixed at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: background-color 0.4s ease; /* Smooth transition */
+}
+
+.navbar.bg-transparent {
+    background-color: transparent !important; /* Force transparency */
+}
+
+.navbar.bg-dark {
+    background-color: rgba(20, 10, 5, 0.95) !important; /* Dark background with some transparency */
+}
+
+/* Optional: Control link color when navbar becomes solid */
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Adjust link color for solid background */
+}

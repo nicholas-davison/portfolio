@@ -1,9 +1,11 @@
+import { Container } from "react-bootstrap"
+import './css/music.css'
 
 export const Music = () => {
 
     return (
-        <div>
-            <h1>Music</h1>
-        </div>
+        <Container className="music-container">
+
+        </Container>
     )
 }
