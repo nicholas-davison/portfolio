@@ -1,6 +1,8 @@
 import { Container, Nav, Navbar } from "react-bootstrap"
 import { useEffect, useState } from "react";
 import './navbar.css'
+import { Link as ScrollLink } from "react-scroll";
+
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +45,13 @@ export const NavBar = () => {
             <Nav.Link href="/experience">Professional Experience</Nav.Link>
             <Nav.Link href="/work">Digital Work</Nav.Link>
             {/* <Nav.Link href="/music">Music</Nav.Link> */}
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <ScrollLink
+            to="footer" // ID of the element you want to scroll to
+            smooth={true}
+            duration={1}
+            className="nav-link"
+            >Contact
+            </ScrollLink>
           </Nav>
           </Navbar.Collapse>
         </Container>
