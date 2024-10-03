@@ -83,10 +83,10 @@ p.bold {
 
 .custom-dark-btn {
     
-    background-color: #013b71; /* Dark blue background */
+    background-color: #1c3561; /* Dark blue background */
     color: white; /* White text color */
     border: none; /* Optional: Remove border */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none; /* Remove the underline */
@@ -94,8 +94,9 @@ p.bold {
 }
 
 .custom-dark-btn:hover {
-    background-color: #001127; /* Optional: Darker shade for hover effect */
+    background-color: hsl(0, 0%, 0%); /* Optional: Darker shade for hover effect */
     color: white; /* Keep text white on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
 }
 
 .custom-lite-btn {
@@ -103,15 +104,16 @@ p.bold {
     background-color: #ecf6ff; /* Dark blue background */
     color: black; /* White text color */
     border: none; /* Optional: Remove border */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none; /* Remove the underline */
 }
 
 .custom-lite-btn:hover {
-    background-color: #e9e9e9; /* Optional: Darker shade for hover effect */
+    background-color: rgb(212, 205, 196); /* Optional: Darker shade for hover effect */
     color: black; /* Keep text white on hover */
+    box-shadow: 0 4px 8px rgba(8, 7, 7, 1);
 }
 
 

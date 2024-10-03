@@ -9,13 +9,20 @@ import { Work } from './pages/work'
 import { Music } from './pages/music'
 import { Footer } from './components/footer';
 import ScrollToTop from './components/scrollToTop';
-import { useEffect } from 'react';
+import { useState } from 'react';
  
 function App() {
+  const [shake, setShake] = useState(false);
 
-/*   useEffect(() => {
-    window.history.scrollRestoration = "manual";
-  }, []); */
+  const triggerShake = () => {
+    setTimeout(() => {
+      setShake(true);
+  
+      setTimeout(() => {
+        setShake(false); 
+      }, 1000); 
+    }, 750);
+  };
 
   return (
     <BrowserRouter>
@@ -23,9 +30,9 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            <NavBar />
+            <NavBar triggerShake={triggerShake}/>
             <Outlet />
-            <Footer />
+            <Footer shake={shake}/>
           </>
         }> 
           <Route index element={<HomePage/>} />

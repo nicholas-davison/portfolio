@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { useLocation } from "react-router-dom";
 
 
-export const NavBar = () => {
+export const NavBar = ({triggerShake}) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
@@ -33,9 +33,7 @@ export const NavBar = () => {
           <Navbar.Brand href="/">
           <img
               src="/NDLogo.png"
-              width="100"
-              height="100"
-              className="d-inline-block align-top"
+              className="logo"
               alt="Nicholas Davison Logo"
             />
             </Navbar.Brand>
@@ -51,6 +49,7 @@ export const NavBar = () => {
             smooth={true}
             duration={1}
             className="nav-link"
+            onClick={triggerShake}
             >Contact
             </ScrollLink>
           </Nav>
