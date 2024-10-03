@@ -5,16 +5,19 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer className="footer bg-dark text-white text-center py-3">
+    <footer id="footer" className="footer bg-dark text-white text-center py-3">
         <Container >
             <h2 className="footer-title">Lets Connect!</h2>
             <Row className="footer-row">
                 <Col xs={12} md={8}>
-                    <p>I love meeting new people. Please reach out and say hello!</p>
-                    <Link to="contact" className="custom-lite-btn">
+                    <p>I love meeting new people. Please reach out and say hello! <br></br>
+                    Email me directly at <strong>nick.a.davison@gmail.com</strong> or use the links on the right to connect!
+                     </p>
+                    
+{/*                     <Link to="contact" className="custom-lite-btn">
                         Contact Me
                         <i className="bi bi-arrow-right-circle-fill m-2"></i>
-                    </Link>
+                    </Link> */}
                 </Col>
                 <Col xs={12} md={4}>
                     <a href="https://github.com/nicholas-davison" target="_blank" rel="noopener noreferrer">

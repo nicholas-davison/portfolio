@@ -10,8 +10,9 @@
     padding-top: 29vh;
     align-items: center;
     position: relative; /* Ensure positioning context */
-    z-index: 1
+    z-index: 1;
 }
+
 
 .section1 {
     background-color: #cfe2f3; /* Adjust paths accordingly */
@@ -83,14 +84,14 @@ p {
 }
 
 
-.contact-icon {
-    color: black; /* Default color */
-    transition: color 0.3s ease; /* Smooth transition */
+/* .contact-icon {
+    color: black; 
+    transition: color 0.3s ease; 
 }
 
 .contact-icon:hover {
-    color: rgba(0,0,0,0.6); /* Color on hover */
-}
+    color: rgba(0,0,0,0.6); 
+} */
 
 .icon-grid {
     margin: 20px 0; /* Add some spacing between rows */
@@ -106,6 +107,12 @@ p {
     display: block; /* Ensure it behaves like a block element */
     margin: 0 auto; /* Center align */
     color: black;
+    transition: transform 0.3s ease;
+}
+
+.custom-icon:hover {
+    transform: translateY(-10px);
+    
 }
 
 .icon-grid span {

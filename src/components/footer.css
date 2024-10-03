@@ -1,7 +1,7 @@
 .footer {
     position: relative;
     bottom: 0;
-    height: 300px;
+    height: auto;
     width: 100%;
     background-color: #003262;
     color: white;
@@ -12,6 +12,12 @@
     justify-content: space-between;
   }
   
+  @media (max-width: 600px) { /* You can adjust the max-width to your needs */
+    .footer {
+        height: 50vh; /* 50% of the viewport height for smaller screens */
+    }
+}
+
   .footer-container {
     flex-grow: 1; /* Allow the container to grow and fill the footer */
     display: flex;
@@ -25,9 +31,11 @@
 }
 
 .footer-row {
-    flex-grow: 1; /* Makes the row occupy the available space in the footer */
+    display: flex;
     display: flex; /* Use flexbox to align items */
-    align-items: center; /* Vertically center the row content */
+    align-items: center ; /* Vertically center the row content */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-copy {
@@ -39,6 +47,7 @@
   color: white;
   font-size: 4rem;
   transition: color 0.3s ease; 
+  vertical-align: middle
 }
 
 .custom-icon-footer:hover {
