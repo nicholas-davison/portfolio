@@ -1,7 +1,14 @@
 .work-container {
-    padding: 0;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
     margin: 0;  /* Remove any default margin */
-    width: 100vw
+    width: 100vw;
+    position: relative;
+    min-height: 100vh;
+    background: url('/alim-cxj-8PILRU4-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
 }
 
 
@@ -9,23 +16,17 @@
     margin: 0; /* Remove margin from the row */
 }
 
-.top-image {
-    width: 100vw; /* Full width of the viewport */
-    height: 30vh; /* Height of 30% of the viewport height */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    display: block; /* Prevents any inline element spacing issues */
-    padding: 0
-}
 
 .work-section-container {
-    border: solid rgb(243, 219, 175);
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .work-section-text {
-    padding: 10%;
+    padding: 6%;
     font-size: large;
+
 }
 
 .work-section-imagery {
@@ -36,7 +37,7 @@
     padding:75px;
 }
 
-.work-section-imagery img {
+.work-section-imagery video {
     width: 100%; /* Make the image fill the column width */
     height: auto; /* Maintain aspect ratio */
     max-height: 100%; /* Prevent overflow */

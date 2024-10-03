@@ -20,3 +20,7 @@
 .navbar-dark .navbar-nav .nav-link {
     color: white; /* Adjust link color for solid background */
 }
+
+.active-link {
+    font-size: 1.5rem; /* Adjust size as needed */
+}

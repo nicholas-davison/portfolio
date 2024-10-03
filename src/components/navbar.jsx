@@ -2,12 +2,13 @@ import { Container, Nav, Navbar } from "react-bootstrap"
 import { useEffect, useState } from "react";
 import './navbar.css'
 import { Link as ScrollLink } from "react-scroll";
+import { useLocation } from "react-router-dom";
 
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
-  // Function to handle scroll event
   const handleScroll = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 0); // Set to true if scrolled down
@@ -41,12 +42,12 @@ export const NavBar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto d-flex justify-content-evenly flex-grow-1" >
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/experience">Professional Experience</Nav.Link>
-            <Nav.Link href="/work">Digital Work</Nav.Link>
+            <Nav.Link href="/" className={location.pathname === "/" ? "active-link" : ""}>Home</Nav.Link>
+            <Nav.Link href="/experience" className={location.pathname === "/experience" ? "active-link" : ""}>Professional Experience</Nav.Link>
+            <Nav.Link href="/work" className={location.pathname === "/work" ? "active-link" : ""}>Digital Work</Nav.Link>
             {/* <Nav.Link href="/music">Music</Nav.Link> */}
             <ScrollLink
-            to="footer" // ID of the element you want to scroll to
+            to="footer"
             smooth={true}
             duration={1}
             className="nav-link"

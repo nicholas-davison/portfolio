@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer id="footer" className="footer bg-dark text-white text-center py-3">
         <Container >
-            <h2 className="footer-title">Lets Connect!</h2>
+            <h2 className="footer-title shake">Lets Connect!</h2>
             <Row className="footer-row">
                 <Col xs={12} md={8}>
                     <p>I love meeting new people. Please reach out and say hello! <br></br>

@@ -6,8 +6,7 @@
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
-    padding-top: 29vh;
+    justify-content: center; 
     align-items: center;
     position: relative; /* Ensure positioning context */
     z-index: 1;
@@ -15,7 +14,7 @@
 
 
 .section1 {
-    background-color: #cfe2f3; /* Adjust paths accordingly */
+    background: linear-gradient(to right, #cfe2f3, white); /* Adjust paths accordingly */
 }
 
 .section2 {

@@ -7,8 +7,8 @@ export const HomePage = () => {
     return (
         <div>
             <div className="homepage">
-                <h2 className="italic fade-in">The Portfolio of </h2>
-                <h1 className="fade-in">Nicholas Davison</h1>
+                <h2 className="italic">The Portfolio of </h2>
+                <h1 >Nicholas Davison</h1>
             </div>
 
             <Container 
@@ -18,7 +18,7 @@ export const HomePage = () => {
                     padding: '0',
                 }}
                 >
-    {/*  About  */}
+    {/*  Experience  */}
                 <Row className="border border-dark ">
                     <Col xs={12} md={6} className="section section1">
                         <h3>Hi There!</h3>
@@ -34,7 +34,7 @@ export const HomePage = () => {
                     </Col>
                         <Col xs={12} md={6} className="section section2">
                     </Col>
-    {/*  Experience  */}                    
+    {/*  Digital Work  */}                    
                     <Col xs={12} md={6} className="section section3">
                         <h2>Work Examples</h2>
                         <p><strong>FallsFinder</strong> is a platform to discover, share, and save information about waterfalls 
@@ -90,28 +90,6 @@ export const HomePage = () => {
                             </Row>
                         </Container>
                     </Col>
-    {/*  Digital Work  */}                
-{/*                     <Col xs={12} md={6} className="section section5">
-                        <Card style={{ width: '560px', height: '315px' }}>
-                            <Card.Body 
-                                className="d-flex justify-content-center align-items-center"
-                            >Placeholder for video runthrough of FallsFinder
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col xs={12} md={6} className="section section6">
-                        <h2>Work Examples</h2>
-                        <p><strong>FallsFinder</strong> is a platform to discover, share, and save information about waterfalls 
-                            in the beautiful state of Tennessee. Users can create pages with detailed information 
-                            on waterfalls in their area, save their favorite falls from the site, and get map directions 
-                            to any of their favorite falls.
-                        </p>
-                        <Link to="work" className="custom-lite-btn">
-                            See my digital work
-                            <i className="bi bi-arrow-right-circle-fill m-2"></i>
-                        </Link>
-                    </Col> */}
-
     {/*  Music  */}
 {/*                     <Col xs={12} md={6} className="section section8">
                         <h2>Music</h2>

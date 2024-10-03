@@ -2,14 +2,13 @@
     padding: 0;
     margin: 0;  /* Remove any default margin */
     width: 100vw;
-    height: auto;
 }
 
-.top-image {
-    width: 100vw; /* Full width of the viewport */
-    height: 10vh; /* Height of 30% of the viewport height */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    display: block; /* Prevents any inline element spacing issues */
+.experience-container .top-image {
+    width: 100vw;
+    height: 25vh;
+    object-fit: cover; 
+    display: block; 
     padding: 0;
 }
 
@@ -21,6 +20,8 @@
 .section-body-education {
     padding-bottom: 50px;
 }
+
+
 
 .section-detail {
     padding: 35px;
@@ -35,7 +36,7 @@
 
 .section-divider {
     border: solid 1.5px #002039;
-
+    
 }
 
 .gradient-line {

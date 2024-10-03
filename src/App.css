@@ -8,6 +8,7 @@ h1 {
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: #002039;
+    margin-bottom: 30vh;
 }
 
 h2 {
@@ -53,6 +54,7 @@ h6.italic {
     font-size: 1rem;
     color: black;
 }
+
 
 /* Apply Syne font for body text */
 body {
@@ -113,3 +115,12 @@ p.bold {
 }
 
 
+@media (max-width: 485px) { /* iPhone size */
+    h1 {
+        font-size: 3rem; /* Smaller size for h1 */
+        margin-bottom: 15vh; /* Adjust margin for h1 */
+    }
+    h2 {
+        font-size: 1.5rem; /* Smaller size for h2 */
+    }
+}
