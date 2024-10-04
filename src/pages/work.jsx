@@ -26,7 +26,8 @@ export const Work = () => {
                     autoPlay 
                     muted 
                     loop 
-                    className="video-center" 
+                    className="video-center"
+                    playsInline 
                     >
                     <source src="/FallsFinderVideo.mp4" type="video/mp4" />
                    
@@ -53,6 +54,7 @@ export const Work = () => {
                         muted 
                         loop 
                         className="video-center" 
+                        playsInline
                         >
                         <source src="/FixWizVideo.mp4" type="video/mp4" />
                     
