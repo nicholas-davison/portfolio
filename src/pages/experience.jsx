@@ -141,7 +141,7 @@ export const Experience = () => {
                         <h5>Certificate, Full Stack Web Development Bootcamp</h5>
                     </Col>
                     <Col xs={12} md={6} className="section-detail-header">
-                        <h4>2009-2023</h4>
+                        <h4>2009-2013</h4>
                         <h5 className="italic">Appalachian State University, Boone, NC</h5>
                         <h5>Bachelor of Science in Music Industry Studies, Concentration in Audio Engineering, Minor in Business - 3.79 GPA</h5>
                     </Col>
