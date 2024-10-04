@@ -24,7 +24,7 @@ export const HomePage = () => {
                         <h3>Hi There!</h3>
                         <p>My name is Nick Davison, and I am so glad you found your way here. 
                             Driven by a passion for technology and operational efficiency, I am transitioning into the tech industry
-                            with a decade of combined experience in audio engineering and inventory management. I have developed strong
+                            with a decade of combined experience in audio engineering and operations leadership. I have developed strong
                             problem solving and managerial skills in my career, and aim to apply my expertise in creating data-driven 
                             solutions and optimizing processes.
                             </p>
