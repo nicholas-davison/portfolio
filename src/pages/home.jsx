@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './css/home.css'
-import { Button, Card, Col, Container, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import djangoLogo from '../assets/icons/djangoLogo.svg'
 
 export const HomePage = () => {
@@ -49,42 +49,43 @@ export const HomePage = () => {
                     <Col className="section section4">
                         <Container>
                             <Row className='text-center'>
-                                <Col xs={6} md={4} className='icon-grid'>
+                                <Col xs={4} md={4} className='icon-grid'>
                                     <i className="fa-brands fa-js custom-icon"></i>
                                     <span>JavaScript</span>
                                 </Col>
-                                <Col xs={6} md={4} className='icon-grid'>
+                                <Col xs={4} md={4} className='icon-grid'>
                                     <i className="fa-brands fa-react custom-icon"></i>
                                     <span>React</span>
                                 </Col>
-                                <Col xs={6} md={4} className='icon-grid'>
+                                <Col xs={4} md={4} className='icon-grid'>
                                     <i className="fa-brands fa-css3-alt custom-icon"></i>
                                     <span>CSS3</span>
                                 </Col>
                             </Row>
                             <Row className='text-center'>
-                                <Col xs={6} md={4} className='icon-grid'>
+                                <Col xs={4} md={4} className='icon-grid'>
                                     <i className="fa-brands fa-python custom-icon"></i>
                                     <span>Python</span>
                                 </Col>
-                                <Col xs={6} md={4} className='icon-grid'>
-                                    <img 
-                                        src={djangoLogo} 
-                                        className='custom-icon'
-                                        alt="Django Icon" 
-                                        /* style={{ width: '100%', maxWidth: '110px', height: 'auto' }} */
-                                    />
-                                    <span>Django</span>
-                                </Col>
-                                <Col xs={6} md={4} className='icon-grid'>
+                                <Col xs={4} md={4} className='icon-grid'>
                                     <i className="fa-brands fa-bootstrap custom-icon"></i>
                                     <span>Bootstrap</span>
+                                </Col>
+                                <Col xs={4} md={4} className='icon-grid'>
+                                    <i className="fa-brands fa-github custom-icon"></i>
+                                    <span>GitHub</span>
                                 </Col>
                             </Row>
                             <Row className='text-center'>
                                 <Col xs={12} md={12} className='icon-grid'>
-                                    <i className="fa-brands fa-github custom-icon"></i>
-                                    <span>GitHub</span>
+                                    <div className='svg'>
+                                        <img 
+                                            src={djangoLogo} 
+                                            className='custom-icon django-logo'
+                                            alt="Django Icon" 
+                                        />
+                                    </div>
+                                    <span>Django</span>
                                 </Col>
                             </Row>
                         </Container>

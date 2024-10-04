@@ -88,6 +88,7 @@ export const Experience = () => {
                     <Col xs={12} md={4} className="section-detail-header">
                         <h5>Freelance/Self Employed - 2017 - 2020</h5>
                         <h6 className="italic">Employed by various artists and studios as an audio engineer
+                        including Jesse Colin Young, Mark Cohn, Reba McEntire, Chris Stapleton, and Donovan
                         </h6>
                     </Col>
                     <Col xs={12} md={8} className="section-detail">
