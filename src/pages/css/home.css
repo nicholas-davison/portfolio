@@ -27,7 +27,6 @@
 }
 
 .section4 {
-    background-image: url('/path/to/image4.jpg');
     background-color:seashell;
     font-size: 125px;
     
@@ -44,10 +43,6 @@
 
 .section7 {
     background-image: url('/16-_DSC2214.jpg');
-}
-
-.section8 {
-
 }
 
 .section {
@@ -77,27 +72,21 @@ p {
     text-align: start;
 }
 
-.icon-grid {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* .contact-icon {
-    color: black; 
-    transition: color 0.3s ease; 
-}
-
-.contact-icon:hover {
-    color: rgba(0,0,0,0.6); 
-} */
 
 .icon-grid {
-    margin: 20px 0; /* Add some spacing between rows */
+    margin: 20px 0;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
+.icon-grid span {
+    display: block; /* Ensure the span takes a new line */
+    margin-top: 5px; /* Space between the icon and the text */
+    font-size: 30px; /* Default text size */
+}
+
 
 .custom-icon {
     width: 100%; /* Use full width of the container */
@@ -109,23 +98,26 @@ p {
     transition: transform 0.3s ease;
 }
 
+.custom-icon .django-logo {
+    max-width: 38%; 
+}
+
 .custom-icon:hover {
     transform: translateY(-10px);
     
 }
 
-.icon-grid span {
-    display: block; /* Ensure the span takes a new line */
-    margin-top: 5px; /* Space between the icon and the text */
-    font-size: 30px; /* Default text size */
-}
 
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
     .custom-icon {
         font-size: 80px; /* Smaller icon size for medium screens */
     }
-    
+    .django-logo  {
+        max-width: 75px;
+        height: auto; /* Even smaller icon size for small screens */
+    }
+
     .icon-grid span {
         font-size: 24px; /* Smaller text size for medium screens */
     }
@@ -135,7 +127,11 @@ p {
     .custom-icon {
         font-size: 60px; /* Even smaller icon size for small screens */
     }
-    
+    .django-logo  {
+        max-width: 55px;
+        height: auto; /* Even smaller icon size for small screens */
+    }
+
     .icon-grid span {
         font-size: 20px; /* Even smaller text size for small screens */
     }
@@ -145,8 +141,15 @@ p {
     .custom-icon {
         font-size: 40px; /* Smallest icon size for extra small screens */
     }
-    
+    .django-logo  {
+        max-width: 40px;
+        height: auto; /* Even smaller icon size for small screens */
+    }
     .icon-grid span {
         font-size: 18px; /* Smallest text size for extra small screens */
+    }
+    .section4 {
+        height: auto;
+        padding-top: 20px;
     }
 }
