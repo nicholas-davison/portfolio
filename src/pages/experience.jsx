@@ -8,7 +8,7 @@ export const Experience = () => {
             <Container fluid className="experience-container">
                 <Row>
                     <img 
-                        src="/brandon-stoll-CDFWESkzXgI-unsplash.jpg" 
+                        src="/SpainRoofs.png" 
                         alt="orange red painting" 
                         className="top-image" />
                 </Row>
@@ -19,10 +19,14 @@ export const Experience = () => {
                 </Row>
                 <Row className="section-body">
                     <Col xs={12} md={4} className="section-detail-header">
-                        <h5>Nashville Software School | Feb 2024 - Aug 2024</h5>
+                        <h5>Nashville Software School | Feb 2024 - Sept 2024</h5>
                         <h6 className="italic">Intensive full-time, six months software development bootcamp focusing on Python/Django 
                             development fundamentals and problem solving. The final three months of the program being 
-                            executed in a simulated company environment with SCRUM methodology.
+                            executed in a simulated company environment with SCRUM methodology. 
+                        </h6>
+                        <h6 className="italic">
+                        Additional seven week professional enrichment course providing a comprehensive focus on SQL fundamentals and 
+                            problem-solving techniques.
                         </h6>
                     </Col>
                     <Col xs={12} md={8} className="section-detail">
@@ -36,6 +40,15 @@ export const Experience = () => {
                             <li>Created RESTful API’s with Django REST framework</li>
                             <li>Retrieved and stored database information with SQLite</li>
                             <li>Practiced testing with Python’s unit test framework</li>
+                        </ul>
+                        <hr className="gradient-line"/>
+                        <ul>
+                            <li>Gain hands-on experience with PostgreSQL</li>
+                            <li>Learn the fundamentals of database design, including creating Entity-Relationship Diagrams (ERDs) and normalizing data</li>
+                            <li>Master SQL scripting to modify database structures using CREATE and ALTER statements</li>
+                            <li>Practice data manipulation through INSERT, UPDATE, and DELETE operations</li>
+                            <li>Explore advanced querying techniques, including Sub-Queries, Common Table Expressions (CTEs), and Window Functions</li>
+                            <li>Automate processes with VIEWs, Stored Procedures, Triggers, and Transactions</li>
                         </ul>
                     </Col>
                 </Row>
@@ -100,7 +113,7 @@ export const Experience = () => {
                 <Row className="section-body">
                     <Col xs={12} md={4} className="section-detail-header">
                         <h5>New England Conservatory of Music; Boston, Massachusetts - 2013-2017</h5>
-                        <h6 className="italic">Employed by various artists and studios as an audio engineer
+                        <h6 className="italic">One of the oldest and most prestigious independent music schools in the United States
                         </h6>
                     </Col>
                     <Col xs={12} md={8} className="section-detail">

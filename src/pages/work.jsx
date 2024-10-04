@@ -6,12 +6,6 @@ export const Work = () => {
 
     return (
         <Container fluid className="work-container">
-            <Row>
-                <img 
-                    src="/alim-cxj-8PILRU4-unsplash.jpg" 
-                    alt="Red-orange stucco wall" 
-                    className="top-image" />
-            </Row>
             <Row className="work-section-container">
                 <Col className="work-section-text" xs={12} md={5}>
                 <strong>FallsFinder</strong> is a platform to discover, share, and save information about waterfalls 
@@ -28,9 +22,15 @@ export const Work = () => {
                     </a>
                 </Col>
                 <Col className="work-section-imagery"  xs={12} md={7}>
-                    <img
-                        src='/FallsFinderStill.png'>
-                    </img>
+                <video  
+                    autoPlay 
+                    muted 
+                    loop 
+                    className="video-center" 
+                    >
+                    <source src="/FallsFinderVideo.mp4" type="video/mp4" />
+                   
+                </video>
                 </Col>
             </Row>
             <Row className="work-section-container">
@@ -48,9 +48,15 @@ export const Work = () => {
                     </a>
                 </Col>
                 <Col className="work-section-imagery"  xs={12} md={7}>
-                    <img
-                        src='/FixWizStill.png'>
-                    </img>
+                    <video  
+                        autoPlay 
+                        muted 
+                        loop 
+                        className="video-center" 
+                        >
+                        <source src="/FixWizVideo.mp4" type="video/mp4" />
+                    
+                    </video>
                 </Col>
             </Row>
         </Container>

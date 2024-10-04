@@ -20,3 +20,17 @@
 .navbar-dark .navbar-nav .nav-link {
     color: white; /* Adjust link color for solid background */
 }
+
+.active-link {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}

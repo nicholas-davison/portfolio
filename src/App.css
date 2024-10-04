@@ -6,8 +6,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 4rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.5);
     color: #002039;
+    margin-bottom: 30vh;
 }
 
 h2 {
@@ -54,6 +55,7 @@ h6.italic {
     color: black;
 }
 
+
 /* Apply Syne font for body text */
 body {
     font-family: 'Syne', sans-serif; /* Ensure Syne is applied here */
@@ -81,10 +83,10 @@ p.bold {
 
 .custom-dark-btn {
     
-    background-color: #013b71; /* Dark blue background */
+    background-color: #1c3561; /* Dark blue background */
     color: white; /* White text color */
     border: none; /* Optional: Remove border */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none; /* Remove the underline */
@@ -92,8 +94,9 @@ p.bold {
 }
 
 .custom-dark-btn:hover {
-    background-color: #001127; /* Optional: Darker shade for hover effect */
+    background-color: hsl(0, 0%, 0%); /* Optional: Darker shade for hover effect */
     color: white; /* Keep text white on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
 }
 
 .custom-lite-btn {
@@ -101,15 +104,25 @@ p.bold {
     background-color: #ecf6ff; /* Dark blue background */
     color: black; /* White text color */
     border: none; /* Optional: Remove border */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none; /* Remove the underline */
 }
 
 .custom-lite-btn:hover {
-    background-color: #e9e9e9; /* Optional: Darker shade for hover effect */
+    background-color: rgb(212, 205, 196); /* Optional: Darker shade for hover effect */
     color: black; /* Keep text white on hover */
+    box-shadow: 0 4px 8px rgba(8, 7, 7, 1);
 }
 
 
+@media (max-width: 485px) { /* iPhone size */
+    h1 {
+        font-size: 3rem; /* Smaller size for h1 */
+        margin-bottom: 15vh; /* Adjust margin for h1 */
+    }
+    h2 {
+        font-size: 1.5rem; /* Smaller size for h2 */
+    }
+}
