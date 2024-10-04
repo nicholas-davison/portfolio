@@ -1,5 +1,7 @@
 .homepage {
-    background-image: url('/gabriel-cox-79VOCg2aIkA-unsplash.jpg'); /* Adjust the path accordingly */
+    /* background-image: url('/gabriel-cox-79VOCg2aIkA-unsplash.jpg'); */
+    background-image: url('/Cadiz Sunset_Edit1.jpg');
+    /* background-image: url('/1689_0013.jpg'); */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating */
