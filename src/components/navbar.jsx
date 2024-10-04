@@ -7,11 +7,16 @@ import { useLocation } from "react-router-dom";
 
 export const NavBar = ({triggerShake}) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false)
   const location = useLocation();
 
   const handleScroll = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 0); // Set to true if scrolled down
+  };
+
+  const handleToggle = () => {
+    setIsDarkMode((prev) => !prev); // Toggle dark mode on navbar collapse
   };
 
   useEffect(() => {
@@ -26,9 +31,9 @@ export const NavBar = ({triggerShake}) => {
     return (
         <Navbar 
           expand="lg" 
-          className={`navbar ${isScrolled ? "bg-dark" : "bg-transparent"} transition`} 
+          className={`navbar ${isScrolled | isDarkMode ? "bg-dark" : "bg-transparent"} transition`} 
           sticky="top" 
-          data-bs-theme={isScrolled ? "dark" : "light"}>
+          data-bs-theme={isScrolled | isDarkMode ? "dark" : "light"}>
         <Container>
           <Navbar.Brand href="/">
           <img
@@ -37,7 +42,7 @@ export const NavBar = ({triggerShake}) => {
               alt="Nicholas Davison Logo"
             />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
             <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto d-flex justify-content-evenly flex-grow-1" >
             <Nav.Link href="/" className={location.pathname === "/" ? "active-link" : ""}>Home</Nav.Link>
